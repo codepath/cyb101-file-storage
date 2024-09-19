@@ -28,7 +28,7 @@ def challenge_1():
         else:
             print("Sorry, that's not the right answer.")
 
-if validate():##
-    challenge_1()
+# if validate():##
+challenge_1()
 
 # print(hashlib.sha256("RAINBOW".encode("utf-8")).hexdigest())
