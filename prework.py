@@ -75,9 +75,9 @@ with open('applicant.txt', 'r') as file:
         if response == 0 or response == 1:
             c1 = check_challenge("challenge_1.txt", "aca4fee155368758392aca3a58e5704c8650173981160328f27181fcf67b68e4")
         if response == 0 or response == 2:
-            c2 = check_challenge("challenge_2.txt", "6f93481fe2c111b1c44176bfa27e6461bf26668e0c6c31fab4a32fa8a4f663e5")
+            c2 = check_challenge("challenge_2.txt", "fd65204fde7b3236df176170aaffb6116533b241c30ce28b910f9872b3f9747b")
         if response == 0 or response == 3:
-            c3 = check_challenge("challenge_3.txt", "fd65204fde7b3236df176170aaffb6116533b241c30ce28b910f9872b3f9747b")
+            c3 = check_challenge("challenge_3.txt", "6f93481fe2c111b1c44176bfa27e6461bf26668e0c6c31fab4a32fa8a4f663e5")
 
         if c1 and c2 and c3:
             with open('applicant.txt', 'rb') as file:
