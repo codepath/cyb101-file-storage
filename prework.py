@@ -26,12 +26,18 @@ def check_challenge(challenge_file, solution_hash):
         file_content = file.read()
         file_hash = hashlib.sha256(file_content).hexdigest()
         file_case_hash = hashlib.sha256(file_content.upper()).hexdigest()
+        file_strip_hash = hashlib.sha256(file_content.strip()).hexdigest()
         dramatic_print([f"Checking {challenge_file}.", ".", ". "])
         if file_hash == solution_hash:
             print(f"✅ Correct!  The password is {file_content.decode('utf-8')}.")
             return True
         elif file_case_hash == solution_hash:
-            print("⚠️ Please check your capitalization and try again.")
+            print("🚧 You're close, but something isn't quite right.")
+            print("Please check your capitalization and try again.")
+            return False
+        elif file_strip_hash == solution_hash:
+            print("🚧 You're close, but something isn't quite right.")
+            print("Please check for extra spaces and try again.")
             return False
         else:
             print("⛔ Sorry, that's not the right answer.")
