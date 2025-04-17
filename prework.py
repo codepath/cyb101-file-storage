@@ -93,6 +93,6 @@ with open('applicant.txt', 'r') as file:
             print()
             print("To receive credit, submit your challenge answers")
             print("and ✨ magic code by following the instructions at:")
-            print("\thttps://courses.codepath.org/snippets/cyb102/prework")
+            print("\thttps://courses.codepath.org/snippets/cyb101/prework")
             print()
             exit()
